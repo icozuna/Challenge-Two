@@ -7,12 +7,15 @@
 body{
     color:blue;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(245, 200, 39,) ;
 }
+
 
 /*HEADER!!!!!!!!!!!!*/
 header {
     padding: 20px 35px;
     background-color: rgba(138,0,0,1);
+    width: 100%;
     
 
 }
@@ -20,30 +23,32 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: orange;
+    color: rgba(233, 157, 4);
     margin: 0;
+    
 }
 
 header a {
-    color: yellow ;
+    color: rgba(138,0,0,1) ;
     text-decoration: none;
-    background-color: red;
+    background-color: rgba(233, 157, 4);
     margin-left: -35px;
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 
 header nav {
     margin: -30px;
     float: right;  
-      
 }
 
 header nav ul li{
     display: inline;  
-    
+    float: left;
+    list-style-type: none;
 }
 
 header nav ul li a {
@@ -54,21 +59,204 @@ header nav ul li a {
    padding-right: 20px;
     text-decoration: underline;
     background-color: rgba(138,0,0,1);
+    color: rgba(233, 157, 4);
+    display: inline;
+}
 
+.subtitle{
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    padding: 20px;
+    background-color: rgba(233, 157, 4);
+    color: rgba(138,0,0,1);
 }
 /*HEADER END*/
 
 /*PICTURE DIVIDER STYLE START*/
 
-.divider img {
+.divider {
     margin: 0 auto;
-    width: 3000px;
-    height: 200px;
+    width: auto;
+    left:50%;
+    height: 100%;
+    position: fixed;
+}
+
+
+
+/*.word-one {
+    font-size: 48px;
+    color: black;
+    margin: 10px 0px 0 35px;
+    padding: 20px 0 0 20px;
+    text-align:;
+}*/
+/*About me section Start*/
+.about-me {
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+.about-me h2 {
+    font-size: 30px;
+    color: rgba(138,0,0,1);
     position: relative;
+    left: 20px;
+    padding: 0 20px 70px 0;
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+    display: flex;
+    box-sizing: border-box;
+    border-inline-end: solid 3px ;
+}
+
+.about-me-text {
+    padding: 0 20px 0 20px;
+    margin-left:0;
+    text-align:right;
+    display: flex;
+    color: rgba(138,0,0,1);
     
+}
+
+.word-one {
+    text-align: right;
+}
+
+/*Work Start*/
+.work-title{
+    color: rgba(138,0,0,1);
+    left: 70px;
+    padding: 0 10px 300px 0px;
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    box-sizing: border-box;
+    border-inline-end: solid 3px;
+    display: flex;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: rgba(138,0,0,1);
+    color: rgba(233, 157, 4);
+    position: relative;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    position:relative;
+}
+
+.card header {
+    padding: 20px;
+    background: rgba(138,0,0,1);
+    color: rgba(233, 157, 4);
+}
+
+.card img {
+    width: 100%;
+    width: 600px;
+    border: solid 4px gold;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer/Contact ME*/
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+footer h2 {
+    color: rgba(138,0,0,1);
+  
+    font-size: 30px;
+    margin: 0;
+    position: ;
+    padding: 0 20px 0px 0px;
+    float: left;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-inline-end: solid 3px;
+    display: flex;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+footer h2, footer div {
+    text-align: right;
+    
+}
+
+
+
+footer nav ul li {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    }
+
+footer nav ul li a {
+    display: block;
+    padding: 20px 0 5px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(138,0,0,1);
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*Footer/Contact ME end*/
